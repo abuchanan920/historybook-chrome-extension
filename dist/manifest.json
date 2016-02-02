@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "HistoryBook",
+  "description": "This extension integrates with the HistoryBook service for indexing and search",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "images/icon.png",
+    "default_title": "Search HistoryBook"
+  },
+  "permissions": [
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "background": {
+    "scripts": [
+      "js/background.js"
+    ],
+    "persistent": false
+  }
+}
