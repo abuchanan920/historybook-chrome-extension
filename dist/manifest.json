@@ -22,5 +22,12 @@
   },
   "omnibox": {
     "keyword": "hb"
-  }
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "exclude_matches": ["http://127.0.0.1:8080/*", "https://127.0.0.1:8080/*"],
+      "js": ["js/content.js"]
+    }
+  ]
 }
