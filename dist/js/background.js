@@ -1,4 +1,4 @@
-var apiEndpoint = "http://127.0.0.1:8080";
+var apiEndpoint = "https://127.0.0.1:8443";
 var defaultCollection = "default";
 
 chrome.browserAction.onClicked.addListener(function(tab) {
